@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+a, a:hover{
+  text-decoration: none;
+}
+.navbar-wrapper {
+  width: 100%;
+  margin-top:0px;
+  position: relative;
+  z-index: 15;
+
+}
+.isStuck{
+    left:0px;
+    width:100%;
+  
+}
+.navbar{
+  background: #0EB493;
+}
+.navbar .navbar-nav .nav-item{
+  width: 100%;
+  text-align: center;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+.navbar .navbar-nav .nav-item .nav-link::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000;
+  display: none;
+  transition: .5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .5s;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after{
+  display: block;
+}
+.swiper-slide{
+  background: url('../images/banner.jpg') top center no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+  text-align: center;
+}
+.swiper-slide h1{
+  color: #fff;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 72px;
+  margin-top: 100px;
+  letter-spacing: 2px;
+}
+.swiper-slide h1 span{
+  color: #fff;
+  font-weight: 200;
+  font-size: 62px;
+  line-height: 72px;
+}
+.swiper-slide h2{
+  color: #fff;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+.swiper-slide h2 span{
+  color: #0EE398;
+  font-weight: 300;
+}
+.swiper-slide p{
+  color: #fff;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.swiper-slide p i{
+    color: #0feb9e;
+    font-size: 20px;
+    line-height: 30px;
+}
+.swiper-slide .social .fab{
+  color: gray;
+  margin: 20px 5px 100px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.swiper-slide .social .fab:hover{
+  color: #0EE37A;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+  display: none;
+}
+
+
+
+
+.feature{
+  width: 100%;
+  padding: 80px 0px;
+  background: #F4F7F9;
+}
+.feature .title{
+  width: 100%;
+  text-align: center;
+}
+.fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+.feature .fa-heart::after{
+  content: "";
+  background: #0EB493;
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  height: 2px;
+  display: block;
+}
+.feature h1{
+  color: #0EB493;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+.feature h3{
+  color: #000;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.feature p{
+  color: #5B646E;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.feature .fab, .feature .fas{
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-left: auto;
+  color: #0EB493;
+  border: 1px solid #0EB493;
+  margin-bottom: 20px;
+}
+
+.work{
+  padding: 80px 0px;
+  width: 100%;
+}
+.work .title{
+  width: 100%;
+  text-align: center;
+}
+.work .fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+.work .fa-heart::after{
+  content: "";
+  background: #0EB493;
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  height: 2px;
+  display: block;
+}
+.work .title h1{
+  color: #0EB493;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+.work .info p{
+  color: #5B646E;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.work .buttons{
+  width: 100%;
+  text-align: center;
+}
+.work .buttons .btn-info{
+  margin: 0 5px 10px;
+  border: 1px solid #2c2929;
+  background: #2c2929;
+  padding: 10px 16px;
+  transition: 0.5s;
+}
+.work .buttons .btn-info:hover, .work .buttons .btn-info:focus{
+  border: 1px solid #2c2929;
+  background: transparent;
+  color: #2c2929;
+
+}
+.work .portfolio .image{
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.work .portfolio .image img{
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  transition: .5s;
+}
+.work .portfolio .image img:hover{
+  transform: scale(1.1, 1.1);
+}
+#particles-js{
+  width: 100%;
+  background: #161623;
+  padding: 80px 0px;
+  position: relative;
+}
+canvas.particles-js-canvas-el {
+  margin-top: -100%;
+}
+#particles-js .title{
+  width: 100%;
+  text-align: center;
+}
+#particles-js .fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-bottom: 54px;
+    color: #0EB493;
+}
+#particles-js .fa-heart::after{
+  content: "";
+  background: #0EB493;
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  height: 2px;
+  display: block;
+}
+#particles-js .title h1{
+  color: #0EB493;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+#particles-js .info p{
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+#particles-js .container .row .col-lg-3 .card{
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  width: 100%;
+  height: 400px;
+  border: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  transition: .5s;
+}
+#particles-js .card .content .imgbx{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, .25);
+  margin: 0 auto;
+}
+#particles-js .card .content .imgbx img{
+  width: 100%;
+  height: 100%;
+}
+.team .card .content .contentbx{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+#particles-js .card .content .contentbx h3{
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+#particles-js .card .content .contentbx h3 span{
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+#particles-js .card .social{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#particles-js .card .social a{
+  color: #fff;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.counter{
+  width: 100%;
+  padding: 80px 0px;
+  background: url('../images/parallax/city.jpg') top center no-repeat;
+  background-size: cover;
+  opacity: .9;
+  background-attachment: fixed;
+}
+.counter .title{
+  width: 100%;
+  text-align: center;
+}
+.counter .fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-bottom: 54px;
+    color: #0EB493;
+}
+.counter .fa-heart::after{
+  content: "";
+  background: #0EB493;
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  height: 2px;
+  display: block;
+}
+.counter .title h1{
+  color: #0EB493;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+
+.counter .col-lg-3 .item{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .1);
+}
+.counter .col-lg-3 .item .count{
+  font-size: 52px;
+  color: #fff;
+  line-height: 62px;
+}
+.counter .col-lg-3 .item p{
+  font-size: 22px;
+  color: #fff;
+  line-height: 32px;
+}
+
+
+.contact{
+  padding: 80px 0px;
+  background: #eee;
+}
+.contact .title{
+  width: 100%;
+  text-align: center;
+}
+.contact .fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+.contact .fa-heart::after{
+  content: "";
+  background: #0EB493;
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  height: 2px;
+  display: block;
+}
+.contact .title h1{
+  color: #0EB493;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+.contact .info p{
+  color: #342b2b;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact .address{
+  width: 100%;
+  display: flex;
+}
+.contact .logo{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #000;
+  margin-right: 10px;
+  color: #fff;
+}
+.contact .logo .fas{
+  font-size: 15px;
+}
+.contact strong{
+  color: #0EB493;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+.contact p{
+  color: #342b2b;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 24px;
+}
+.contact .social {
+    font-size: 25px;
+    margin: 20px 0px;
+    color: #2c2929;
+    text-align: center;
+}
+.contact .social .fab{
+  padding: 10px;
+  color: #2c2929;
+  cursor: pointer;
+}
+.contact .social .fab:hover{
+  color: #0EB493;
+  cursor: pointer;
+}
+.contact .contact-me h3 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.contact .contact-me p {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+.contact .contact-me{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px 60px;
+  color: #fff;
+  margin-right: 0;
+}
+.contact .contact-me .modal .modal-dialog .modal-content{
+  background: rgba(255, 255, 255, 0.06);
+  border: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  padding: 20px;
+}
+.contact .contact-me .modal .modal-dialog .modal-content .modal-body input{
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+.contact .contact-me .modal .modal-dialog .modal-content .modal-body textarea{
+  width: 100%;
+  padding: 6px 10px;
+}
+.contact .contact-me .modal .modal-dialog .modal-content .modal-body .modal-footer{
+  width: 100%;
+  text-align: center;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: #2c2929;
+    padding: 5px 16px;
+    text-align: center;
+    color: #fff;
+}
+.btn:not(:disabled):not(.disabled):hover, .btn:not(:disabled):not(.disabled):focus{
+  background: transparent;
+  color: #2c2929;
+  border: 1px solid #2c2929;
+}
+.map{
+  width: 100%;
+}
+.footer{
+  background: #1EA78D;
+  padding: 80px 0px 0px;
+  margin-top: -8px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer .left{
+  text-align: left;
+  padding-right: 20px;
+}
+.footer input {
+    text-align: center;
+    margin: 0 auto 10px;
+    overflow: visible;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 4px 6px;
+}
+.footer button {
+    padding: 4px 16px;
+    border: none;
+    background: #2c2929;
+    text-align: center;
+    color: #fff;
+  border: 1px solid #2c2929;
+  transition: .5s;
+  border-radius: 5px;
+}
+.footer button:hover{
+  background: transparent;
+  color: #2c2929;
+  border: 1px solid #2c2929;
+}
+.footer h5{
+  text-align: center;
+}
+.footer ul{
+  padding: 0;
+}
+.footer ul li{
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+.footer ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+  display: inline-block;
+}
+.footer span{
+  text-transform: uppercase;
+}
+
+
+
+@media (max-width: 767px) {
+ .swiper-slide h1{
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  margin-top: 100px;
+  letter-spacing: 1px;
+}
+.swiper-slide h1 span{
+  color: #fff;
+  font-weight: 200;
+  font-size: 42px;
+  line-height: 52px;
+}
+.swiper-slide h2{
+  color: #fff;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+.swiper-slide h2 span{
+  color: #0EE398;
+  font-weight: 300;
+}
+.swiper-slide p{
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.swiper-slide p i{
+    color: #0feb9e;
+    font-size: 20px;
+    line-height: 30px;
+}
+.swiper-slide .social .fab{
+  color: gray;
+  margin: 20px 5px 100px;
+  font-size: 20px;
+  cursor: pointer;
+} 
+.feature{
+  text-align: center;
+}
+}
